@@ -6,6 +6,8 @@ import { Link } from "react-scroll";
 export const Wrapper = styled.section`
     min-height: 100vh;
     background-image: url("${background}");
+    background-size: cover;
+    background-position:center ;
     display: flex;
     justify-content: center;
     align-items: center;
