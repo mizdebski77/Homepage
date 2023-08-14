@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import background from '../../common/Images/background.png'
 import SVG from "react-inlinesvg";
 import { Link } from "react-scroll";
+import { bottomAnimation, leftAnimation, rightAnimation } from "../../core/animations";
 
 export const Wrapper = styled.section`
     min-height: 100vh;
@@ -37,6 +38,7 @@ export const Name = styled.h1`
     font-size: 60px;
     font-weight: bold;
     margin: 0;
+    animation: ${rightAnimation} 1s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
       font-size: 32px;
@@ -52,6 +54,7 @@ export const Header = styled.h2`
     font-size: 32px;
     font-weight: normal;
     margin: 0;
+    animation: ${leftAnimation} 1s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
       font-size: 20px;
@@ -63,6 +66,7 @@ export const SocialsWrapper = styled.div`
     justify-content: space-around;
     align-items: center;
     margin: 8px 0;
+    animation: ${leftAnimation} 1s;
 `;
 
 export const SocialLink = styled.a`
@@ -112,7 +116,7 @@ export const ContactButton = styled(Link)`
     justify-content: center;
     gap: 10px;
     transition: 0.3s;
-
+    animation: ${bottomAnimation} 1s;
     &:hover{
         transform: scale(1.03);
         box-shadow: 0 0 10px ${({ theme }) => theme.color.secondColor};
