@@ -1,5 +1,5 @@
 import { css, styled } from "styled-components";
-import bg from './Images/bg.png'
+
 export const Wrapper = styled.section<{ leftvariant?: boolean; rightvariant?: boolean }>`
     min-height: 100vh;
     padding: 40px;
@@ -14,6 +14,7 @@ export const Wrapper = styled.section<{ leftvariant?: boolean; rightvariant?: bo
         min-height: 50vh;
         align-items: initial;
     };
+
 
     ${({ leftvariant }) => leftvariant && css`
         grid-template-columns: auto 1fr;
