@@ -1,13 +1,13 @@
 import { css, styled } from "styled-components";
-
+import bg from './Images/bg.png'
 export const Wrapper = styled.section<{ leftvariant?: boolean; rightvariant?: boolean }>`
     min-height: 100vh;
-    background: ${({ theme }) => theme.color.mainColor};
     padding: 40px;
     display: grid;
     align-items: center;
     align-content: center;
-
+    background: radial-gradient(89.04% 61.21% at 22.45% 16.58%, rgba(224, 188, 20, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%);
+   
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
         padding: 20px 16px;
         grid-auto-rows: min-content;
@@ -52,7 +52,7 @@ export const Title = styled.h1<{ leftvariant?: boolean; rightvariant?: boolean, 
     margin: 0;
     font-size: 100px;
     letter-spacing: 2rem;
-    opacity: 60%;
+    opacity: 50%;
     text-transform: uppercase;
     word-break: normal;
 
@@ -64,7 +64,7 @@ export const Title = styled.h1<{ leftvariant?: boolean; rightvariant?: boolean, 
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 40px;
-        letter-spacing: 1.2rem;
+        letter-spacing: 1rem;
         position: static;
     };
 

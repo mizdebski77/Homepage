@@ -15,8 +15,10 @@ html {
   width: 100%;
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  background: ${({ theme }) => theme.color.mainColor};
   word-break: break-word;
   overflow-x: hidden
+  
  }
   `;
 
