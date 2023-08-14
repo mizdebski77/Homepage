@@ -5,7 +5,7 @@ import { Languages, Skillset, Softwares } from './skillset';
 
 export const Skills = () => {
     return (
-        <Wrapper rightvariant>
+        <Wrapper rightvariant id='skillset'> 
             <ContentWrapper>
                 <Card>
                     <CardTitle>Skills</CardTitle>

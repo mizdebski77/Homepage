@@ -1,11 +1,16 @@
 import { css, styled } from "styled-components";
 
 export const ContentWrapper = styled.div`
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     align-items: start;
     gap: 40px;
+
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         display: flex;
@@ -15,15 +20,13 @@ export const ContentWrapper = styled.div`
         gap: 20px;
     };
 
-    @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
-        grid-template-columns: 1fr 1fr;
-    };
 `;
 
 export const Card = styled.div`
     box-shadow: 0px 0px 21px 8px rgba(224, 188, 20, 0.17);
     display: grid;
     max-width: 540px;
+    width: 100%;
     padding: 20px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){

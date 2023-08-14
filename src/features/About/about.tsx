@@ -8,7 +8,7 @@ import { informations } from './informations';
 export const About = () => {
     return (
 
-            <Wrapper leftvariant>
+            <Wrapper leftvariant id='about'>
                 <TitleWrapper>
                     <Title leftvariant> About Me </Title>
                 </TitleWrapper>
