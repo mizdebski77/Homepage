@@ -1,7 +1,7 @@
-import github from './common/Images/Socials/github.svg';
-import gmail from './common/Images/Socials/gmail.svg';
-import facebook from './common/Images/Socials/facebook.svg';
-import linkedin from './common/Images/Socials/linkedin.svg';
+import github from '../../common/Images/Socials/github.svg';
+import gmail from '../../common/Images/Socials/gmail.svg';
+import facebook from '../../common/Images/Socials/facebook.svg';
+import linkedin from '../../common/Images/Socials/linkedin.svg';
 
 export const socialLinksData = [
     { href: 'https://github.com/mizdebski77', src: github },

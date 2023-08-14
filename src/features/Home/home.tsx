@@ -1,6 +1,6 @@
 import React from 'react';
 import { ButtonSvg, ContactButton, ContentWrapper, Header, Name, SocailThumbnail, SocialLink, SocialsWrapper, Span, Wrapper } from './styledHome';
-import { socialLinksData } from '../../links';
+import { socialLinksData } from './links';
 import mailImg from '../../common/Images/mail.svg';
 
 export const Home = () => {
