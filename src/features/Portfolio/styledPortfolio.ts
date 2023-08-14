@@ -1,5 +1,6 @@
 import { keyframes, styled } from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { bottomAnimation } from "../../core/animations";
 
 
 export const CustomSwiper = styled(Swiper)`
@@ -7,6 +8,7 @@ export const CustomSwiper = styled(Swiper)`
   width: 100%;
   padding: 40px;
   margin: 0 auto;
+  animation: ${bottomAnimation} 1s;
 
 
     .swiper-button-next {

@@ -1,4 +1,5 @@
-import { css, styled } from "styled-components";
+import { css, keyframes, styled } from "styled-components";
+import { titleLeftAnimation, titleRightAnimation } from "../core/animations";
 
 export const Wrapper = styled.section<{ leftvariant?: boolean; rightvariant?: boolean }>`
     min-height: 100vh;
@@ -73,12 +74,13 @@ export const Title = styled.h1<{ leftvariant?: boolean; rightvariant?: boolean, 
         left: 150px;
         transform: translate(-50%, -50%) rotate(-90deg);
         right: none;
-        
-
+        animation: ${titleLeftAnimation} 1s;
+       
         @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
             left: none;
             transform: none;
             display: inline;
+            animation: none;
         };
     `};
 
@@ -86,11 +88,14 @@ export const Title = styled.h1<{ leftvariant?: boolean; rightvariant?: boolean, 
   ${({ rightvariant }) => rightvariant && css`
         transform: translate(50%, -50%) rotate(-90deg);
         right: 200px;
+        animation: ${titleRightAnimation} 1s;
+
 
         @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
             letter-spacing: 1.2rem;
             position: static;
             transform: none;
+            animation: none;
         };
     `};
 

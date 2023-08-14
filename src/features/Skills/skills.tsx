@@ -7,7 +7,7 @@ export const Skills = () => {
     return (
         <Wrapper rightvariant id='skillset'> 
             <ContentWrapper>
-                <Card>
+                <Card animationLeft>
                     <CardTitle>Skills</CardTitle>
                     <ElementsList>
                         {Skillset.map((skill, index) => (
@@ -19,7 +19,7 @@ export const Skills = () => {
                 </Card>
 
 
-                <Card>
+                <Card animationBottom>
                     <CardTitle>Languages</CardTitle>
                     <ElementsList columns >
                         {Languages.map((language) => (
@@ -31,7 +31,7 @@ export const Skills = () => {
                     </ElementsList>
                 </Card>
 
-                <Card>
+                <Card animationRight>
                     <CardTitle>Softwares</CardTitle>
                     <ElementsList columns>
                         {Softwares.map((software) => (

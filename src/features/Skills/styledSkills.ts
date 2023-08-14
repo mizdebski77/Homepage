@@ -1,4 +1,5 @@
 import { css, styled } from "styled-components";
+import { bottomAnimation, leftAnimation, rightAnimation } from "../../core/animations";
 
 export const ContentWrapper = styled.div`
     display: flex;
@@ -22,7 +23,7 @@ export const ContentWrapper = styled.div`
 
 `;
 
-export const Card = styled.div`
+export const Card = styled.div<{ animationLeft?: boolean, animationBottom?: boolean, animationRight?: boolean }>`
     box-shadow: 0px 0px 21px 8px rgba(224, 188, 20, 0.17);
     display: grid;
     max-width: 540px;
@@ -34,6 +35,18 @@ export const Card = styled.div`
         width: 100%;
         padding: 12px;
     };
+
+    ${({ animationLeft }) => animationLeft && css`
+        animation: ${leftAnimation} 1s; 
+    `};
+    
+    ${({ animationBottom }) => animationBottom && css`
+        animation: ${bottomAnimation} 1s; 
+    `};
+
+    ${({ animationRight }) => animationRight && css`
+        animation: ${rightAnimation} 1s; 
+    `};
 `;
 
 export const CardTitle = styled.h2`

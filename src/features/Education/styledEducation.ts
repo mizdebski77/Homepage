@@ -1,9 +1,11 @@
 import { styled } from "styled-components";
+import { bottomAnimation } from "../../core/animations";
 
 export const ContentWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    animation: ${bottomAnimation} 1s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         grid-template-columns: 1fr;

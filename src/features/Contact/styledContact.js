@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import SVG from "react-inlinesvg";
+import { bottomAnimation, leftAnimation, rightAnimation } from "../../core/animations";
 
 export const ContentWrapper = styled.div`
     display: grid;
@@ -14,7 +15,7 @@ export const ContentWrapper = styled.div`
 export const Form = styled.form`
     display: grid;
     gap: 20px;
-
+    animation: ${bottomAnimation} 1s;
 `;
 
 export const InputsWrapper = styled.div`
@@ -75,6 +76,7 @@ export const ContactDataWrapper = styled.div`
     margin: auto;
     align-items: center;
     justify-content: start;
+    animation: ${rightAnimation} 1s;
     
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         display: grid;

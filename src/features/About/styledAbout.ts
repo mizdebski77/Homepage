@@ -1,4 +1,5 @@
-import { css, styled } from "styled-components";
+import { css, keyframes, styled } from "styled-components";
+import { bottomAnimation, rightAnimation } from "../../core/animations";
 
 export const ContentWrapper = styled.div`
     display: grid;
@@ -22,6 +23,7 @@ export const Circle = styled.div`
     justify-content: center;
     align-items: start;
     box-shadow: 0px 4px 23px 0px ${({ theme }) => theme.color.secondColor};
+    animation: ${bottomAnimation} 1s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         border-radius: 0;
@@ -97,4 +99,5 @@ export const Description = styled.span`
 export const Photo = styled.img`
    max-width: 600px;
    width: 100%;
+   animation: ${rightAnimation} 1s;
 `;
