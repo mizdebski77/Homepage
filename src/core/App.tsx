@@ -1,7 +1,8 @@
+import { Home } from "../features/Home/home";
 
 function App() {
   return (
-null
+    <Home />
   );
 }
 

@@ -2,12 +2,15 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import App from './core/App';
 import { ThemeProvider } from 'styled-components';
+import { theme } from './core/theme';
+import { GlobalStyle } from './core/globalStyles';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <ThemeProvider theme={theme}>
+    <GlobalStyle/>
     <App />
   </ThemeProvider>
 
