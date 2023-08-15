@@ -1,19 +1,32 @@
 import React, { useState } from 'react';
-import { Logo, NavbarWrapper, LinksWrapper, NavLink, Wrapper, MobileNavbarWrapper, MobileLinksWrapper, MobileNavbar } from './styledNavbar';
+import { Logo, NavbarWrapper, LinksWrapper, NavLink,  MobileNavbarWrapper, MobileLinksWrapper, MobileNavbar } from './styledNavbar';
 import { LinksData } from './links';
 import Hamburger from 'hamburger-react';
 
 export const Navbar = () => {
 
-    const [mobileNavbar, setMobileNavbar] = useState<boolean>(false);
+    const [mobileNavbar, setMobileNavbar] = useState(false);
+    const [navbarColor, setNavbarColor] = useState(false);
 
     const toggleMobileNavbar = () => {
         setMobileNavbar(!mobileNavbar);
     };
-    return (
-        <Wrapper>
 
-            <NavbarWrapper>
+        const changeColor = () => {
+        if (window.scrollY >= 100) {
+            setNavbarColor(true);
+        } else {
+            setNavbarColor(false);
+        };
+    };
+
+    window.addEventListener("scroll", changeColor, { passive: true });
+
+
+    return (
+        <>
+
+            <NavbarWrapper scrolled={navbarColor}>
                 <Logo to="home"
                     spy={true}
                     offset={-70}
@@ -54,9 +67,7 @@ export const Navbar = () => {
                     </MobileLinksWrapper>
                 </MobileNavbarWrapper>
             )}
-
-        </Wrapper>
-
+        </>
     );
 };
 

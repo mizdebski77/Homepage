@@ -1,4 +1,4 @@
-import { css, keyframes, styled } from "styled-components";
+import { css,  styled } from "styled-components";
 import { bottomAnimation, rightAnimation } from "../../core/animations";
 
 export const ContentWrapper = styled.div`

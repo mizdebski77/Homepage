@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import SVG from "react-inlinesvg";
-import { bottomAnimation, leftAnimation, rightAnimation } from "../../core/animations";
+import { bottomAnimation,  rightAnimation } from "../../core/animations";
 
 export const ContentWrapper = styled.div`
     display: grid;

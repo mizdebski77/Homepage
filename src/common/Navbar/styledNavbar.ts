@@ -1,22 +1,20 @@
 import { Link } from "react-scroll";
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 
-export const Wrapper = styled.div`
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-`;
-
-export const NavbarWrapper = styled.nav`
+export const NavbarWrapper = styled.nav<{scrolled?: boolean}>`
     position: fixed;
-    z-index: 1;
-    max-width: 1600px;
+    z-index: 10;
     width: 100%;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+
+    
+  ${({ scrolled }) => scrolled && css`
+    background: rgba(29, 28, 27, 0.7);
+    border-bottom: 1px solid ${({theme}) => theme.color.secondColor};
+  `};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
       justify-content: space-between;

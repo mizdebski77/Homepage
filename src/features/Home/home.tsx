@@ -5,7 +5,7 @@ import mailImg from '../../common/Images/mail.svg';
 
 export const Home = () => {
     return (
-        <Wrapper>
+        <Wrapper id = "home">
             <ContentWrapper>
                 <Header>Hello</Header>
                 <Name>I'm</Name>
