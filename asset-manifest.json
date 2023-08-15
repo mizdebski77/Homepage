@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Homepage/static/css/main.956b2fb8.css",
+    "main.js": "/Homepage/static/js/main.cc84ebf2.js",
+    "static/js/787.5c39024c.chunk.js": "/Homepage/static/js/787.5c39024c.chunk.js",
+    "static/media/background.png": "/Homepage/static/media/background.3a071f69fcd757e7a517.png",
+    "static/media/borded.png": "/Homepage/static/media/borded.e310e3a819fc5da9a08a.png",
+    "index.html": "/Homepage/index.html",
+    "static/media/github.svg": "/Homepage/static/media/github.04be58c17b3d5e9744424d414240dd85.svg",
+    "static/media/mail.svg": "/Homepage/static/media/mail.56058da1f2ed96c18f68b647b2a9fed8.svg",
+    "static/media/linkedin.svg": "/Homepage/static/media/linkedin.b5e96b0e66a4b123498481aab9bdd5ef.svg",
+    "static/media/phone.svg": "/Homepage/static/media/phone.a6541346bd67ac829c0c7c527ee66d1e.svg",
+    "static/media/facebook.svg": "/Homepage/static/media/facebook.98aa70376eaf18b2af8d225e0a1e3552.svg",
+    "static/media/gmail.svg": "/Homepage/static/media/gmail.6ac62bfa03e2a985535678e82ffed575.svg",
+    "static/media/website.svg": "/Homepage/static/media/website.4d138caf84cd77e4f10ee92cabf6422d.svg",
+    "main.956b2fb8.css.map": "/Homepage/static/css/main.956b2fb8.css.map",
+    "main.cc84ebf2.js.map": "/Homepage/static/js/main.cc84ebf2.js.map",
+    "787.5c39024c.chunk.js.map": "/Homepage/static/js/787.5c39024c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.956b2fb8.css",
+    "static/js/main.cc84ebf2.js"
+  ]
+}
