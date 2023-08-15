@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { css, styled } from "styled-components";
 
-export const NavbarWrapper = styled.nav<{scrolled?: boolean}>`
+export const NavbarWrapper = styled.nav<{ scrolled?: boolean }>`
     position: fixed;
     z-index: 10;
     width: 100%;
@@ -12,8 +12,8 @@ export const NavbarWrapper = styled.nav<{scrolled?: boolean}>`
 
     
   ${({ scrolled }) => scrolled && css`
-    background: rgba(29, 28, 27, 0.7);
-    border-bottom: 1px solid ${({theme}) => theme.color.secondColor};
+    background: rgba(29, 28, 27, 0.9);
+    border-bottom: 1px solid ${({ theme }) => theme.color.secondColor};
   `};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
@@ -84,7 +84,8 @@ export const MobileNavbarWrapper = styled.div`
     position: fixed;
     width: 100%;
     z-index: 10;
-    top: 72px;
+    top: 73px;
+
 `;
 
 export const MobileLinksWrapper = styled.div`

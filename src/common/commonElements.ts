@@ -1,5 +1,5 @@
 import { css,  styled } from "styled-components";
-import { titleLeftAnimation, titleRightAnimation } from "../core/animations";
+import { bottomAnimation, titleLeftAnimation, titleRightAnimation } from "../core/animations";
 
 export const Wrapper = styled.section<{ leftvariant?: boolean; rightvariant?: boolean }>`
     min-height: 100vh;
@@ -80,7 +80,7 @@ export const Title = styled.h1<{ leftvariant?: boolean; rightvariant?: boolean, 
             left: none;
             transform: none;
             display: inline;
-            animation: none;
+            animation: ${bottomAnimation} 1s;
         };
     `};
 
@@ -95,7 +95,7 @@ export const Title = styled.h1<{ leftvariant?: boolean; rightvariant?: boolean, 
             letter-spacing: 1.2rem;
             position: static;
             transform: none;
-            animation: none;
+            animation: ${bottomAnimation} 1s;
         };
     `};
 

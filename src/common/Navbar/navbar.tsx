@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { Logo, NavbarWrapper, LinksWrapper, NavLink,  MobileNavbarWrapper, MobileLinksWrapper, MobileNavbar } from './styledNavbar';
+import { Logo, NavbarWrapper, LinksWrapper, NavLink, MobileNavbarWrapper, MobileLinksWrapper, MobileNavbar } from './styledNavbar';
 import { LinksData } from './links';
 import Hamburger from 'hamburger-react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { MobileLinksWrapperAnimation, MobileNavAnimation } from '../../core/animations';
 
 export const Navbar = () => {
 
@@ -12,7 +14,7 @@ export const Navbar = () => {
         setMobileNavbar(!mobileNavbar);
     };
 
-        const changeColor = () => {
+    const changeColor = () => {
         if (window.scrollY >= 100) {
             setNavbarColor(true);
         } else {
@@ -21,7 +23,6 @@ export const Navbar = () => {
     };
 
     window.addEventListener("scroll", changeColor, { passive: true });
-
 
     return (
         <>
@@ -49,24 +50,40 @@ export const Navbar = () => {
                     <Hamburger color='#D9B815' size={28} />
                 </MobileNavbar>
             </NavbarWrapper>
-            {mobileNavbar && (
 
-                <MobileNavbarWrapper>
+            <AnimatePresence>
 
-                    <MobileLinksWrapper>
-                        {LinksData.map((link, index) => (
-                            <NavLink
-                                key={index}
-                                spy={true}
-                                to={link.to}
-                                smooth={true}
-                            >
-                                {link.text}
-                            </NavLink>
-                        ))}
-                    </MobileLinksWrapper>
-                </MobileNavbarWrapper>
-            )}
+                {mobileNavbar && (
+
+                    <MobileNavbarWrapper
+                        as={motion.div}
+                        initial="hidden"
+                        animate={mobileNavbar ? "visible" : "hidden"}
+                        exit="hidden"
+                        variants={MobileNavAnimation}
+                    >
+
+                        <MobileLinksWrapper
+                            as={motion.div}
+                            initial="hidden"
+                            animate="visible"
+                            exit="hidden"
+                            variants={MobileLinksWrapperAnimation}
+                        >
+                            {LinksData.map((link, index) => (
+                                <NavLink
+                                    key={index}
+                                    spy={true}
+                                    to={link.to}
+                                    smooth={true}
+                                >
+                                    {link.text}
+                                </NavLink>
+                            ))}
+                        </MobileLinksWrapper>
+                    </MobileNavbarWrapper>)}
+            </AnimatePresence>
+
         </>
     );
 };

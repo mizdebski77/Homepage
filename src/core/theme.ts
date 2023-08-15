@@ -2,7 +2,7 @@ export const theme = {
     color: {
         mainColor: "#1D1C1B",
         secondColor: "#D9B815",
-        navbar: "rgb(24, 24, 27)",
+        navbar: "rgba(24, 24, 27, 0.9)",
         boxColor: "rgba(35, 34, 33, 0.5)",
         linksColor: "#ffff"
     },

@@ -22,7 +22,9 @@ export const Circle = styled.div`
     display: flex;
     justify-content: center;
     align-items: start;
+    will-change: transform, opacity;
     box-shadow: 0px 4px 23px 0px ${({ theme }) => theme.color.secondColor};
+    animation-fill-mode: both;
     animation: ${bottomAnimation} 1s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
@@ -100,4 +102,8 @@ export const Photo = styled.img`
    max-width: 600px;
    width: 100%;
    animation: ${rightAnimation} 1s;
+
+   @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
+    animation: ${bottomAnimation} 1s;
+    };
 `;

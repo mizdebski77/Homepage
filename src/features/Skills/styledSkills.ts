@@ -38,6 +38,9 @@ export const Card = styled.div<{ animationLeft?: boolean, animationBottom?: bool
 
     ${({ animationLeft }) => animationLeft && css`
         animation: ${leftAnimation} 1s; 
+        @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
+        animation: ${bottomAnimation} 1s;
+    };
     `};
     
     ${({ animationBottom }) => animationBottom && css`
@@ -46,7 +49,13 @@ export const Card = styled.div<{ animationLeft?: boolean, animationBottom?: bool
 
     ${({ animationRight }) => animationRight && css`
         animation: ${rightAnimation} 1s; 
+
+        @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
+        animation: ${bottomAnimation} 1s;
+    };
     `};
+
+
 `;
 
 export const CardTitle = styled.h2`

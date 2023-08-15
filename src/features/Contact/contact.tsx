@@ -10,7 +10,7 @@ export const Contact = () => {
 
     const [ref, inView] = useInView({
         triggerOnce: true,
-        rootMargin: '0px 0px -70% 0px',
+        rootMargin: '0px 0px -40% 0px',
     });
 
     const handleSendEmailSuccess = () => {
