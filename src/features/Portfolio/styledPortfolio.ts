@@ -71,7 +71,7 @@ export const CustomSlide = styled(SwiperSlide)`
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         min-height: 400px;
     };
-
+/* 
 	&::before {
 		content: '';
 		position: absolute;
@@ -96,7 +96,7 @@ export const CustomSlide = styled(SwiperSlide)`
         background: ${({ theme }) => theme.color.mainColor};
         box-shadow: 0 0 10px ${({ theme }) => theme.color.secondColor};
 		border-radius: 5px;
-	};
+	}; */
 	
 `;
 
