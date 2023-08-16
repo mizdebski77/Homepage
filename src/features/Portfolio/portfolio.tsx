@@ -36,11 +36,17 @@ export const Porfolio = () => {
 
                     <CustomSwiper<React.ComponentType<any>>
 
+                        breakpoints={{
+                            900: {
+                                slidesPerView: 3,
+                                spaceBetween: 40,
 
+                            },
+                        }}
 
                         effect={'coverflow'}
                         centeredSlides={true}
-                        slidesPerView={3}
+                        slidesPerView={1}
                         modules={[Navigation, Scrollbar, EffectCoverflow, Pagination]}
                         spaceBetween={40}
                         grabCursor={true}
