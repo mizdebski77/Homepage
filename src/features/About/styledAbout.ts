@@ -65,7 +65,7 @@ export const DataWrapper = styled.div`
 
 `;
 
-export const Information = styled.h2<{ changeColor?: boolean, title?: boolean }> `
+export const Information = styled.h2<{ changeColor?: boolean, name?: boolean }> `
     font-size: 18px;
     padding: 8px;
     font-weight: normal;
@@ -77,7 +77,7 @@ export const Information = styled.h2<{ changeColor?: boolean, title?: boolean }>
         color:  white;
     `};
 
-    ${({ title }) => title && css`
+    ${({ name }) => name && css`
         font-size: 28px;
 
         @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
@@ -97,6 +97,7 @@ export const Description = styled.span`
         text-align: center;
     };
 `;
+
 
 export const Photo = styled.img`
    max-width: 600px;

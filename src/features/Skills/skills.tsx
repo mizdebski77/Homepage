@@ -8,8 +8,19 @@ export const Skills = () => {
 
     const [ref, inView] = useInView({
         triggerOnce: true,
-        rootMargin: '0px 0px -70% 0px',
+        rootMargin: calculateRootMargin(),
     });
+
+    function calculateRootMargin() {
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth < 768) {
+            return '0px 0px -10% 0px';
+        } else {
+            return '0px 0px -70% 0px';
+        }
+    };
+
 
     return (
         <Wrapper rightvariant id='skillset' ref={ref}>
