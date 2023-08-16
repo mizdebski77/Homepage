@@ -1,7 +1,7 @@
 import React from 'react';
 import { Title, TitleWrapper, Wrapper } from '../../common/commonElements';
 import { DataWrapper, Description, Information, InformationsWrapper, Photo, Circle, } from './styledAbout';
-import photo from '../../common/Images/borded.png';
+import photo from '../../common/Images/profilePhoto.webp';
 import { ContentWrapper } from './styledAbout';
 import { informations } from './informations';
 import { useInView } from 'react-intersection-observer';
@@ -27,8 +27,8 @@ export const About = () => {
                             <InformationsWrapper>
                                 {informations.map((information, index) => (
                                     <DataWrapper>
-                                        <Information title={information.id === 1} > {information.title}: </Information>
-                                        <Information title={information.id === 1} changeColor> {information.data}</Information>
+                                        {/* <Information title={information.id === 1} > {information.title}: </Information>
+                                        <Information title={information.id === 1} changeColor> {information.data}</Information> */}
                                     </DataWrapper>
                                 ))}
 

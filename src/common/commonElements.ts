@@ -1,4 +1,4 @@
-import { css,  styled } from "styled-components";
+import styled, { css } from "styled-components";
 import { bottomAnimation, titleLeftAnimation, titleRightAnimation } from "../core/animations";
 
 export const Wrapper = styled.section<{ leftvariant?: boolean; rightvariant?: boolean }>`

@@ -1,4 +1,4 @@
-import { keyframes, styled } from "styled-components";
+import styled, { keyframes, } from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { bottomAnimation } from "../../core/animations";
 
@@ -32,11 +32,11 @@ export const CustomSwiper = styled(Swiper)`
     };
 
     .swiper-pagination-bullet-active {
-        background: ${({theme}) => theme.color.secondColor};
+        background: ${({ theme }) => theme.color.secondColor};
     };
 
     .swiper-pagination-bullet {
-        background: ${({theme}) => theme.color.secondColor};
+        background: ${({ theme }) => theme.color.secondColor};
     }
 
     .swiper-wrapper {

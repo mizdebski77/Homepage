@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import styled from "styled-components";
 import background from '../../common/Images/background.png'
 import SVG from "react-inlinesvg";
 import { Link } from "react-scroll";

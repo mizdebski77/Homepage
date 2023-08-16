@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { css, styled } from "styled-components";
+import styled, { css } from "styled-components";
 
 export const NavbarWrapper = styled.nav<{ scrolled?: boolean }>`
     position: fixed;
