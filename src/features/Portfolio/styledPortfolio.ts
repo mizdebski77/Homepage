@@ -172,8 +172,13 @@ export const Caption = styled.h3`
 export const Projectlink = styled.a`
     color: white;
     font-style: italic;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 100;
+    text-decoration: none;
+    transition: 0.2s;
+    &:hover {
+        color: ${({theme}) => theme.color.secondColor   };
+    }
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 16px;
