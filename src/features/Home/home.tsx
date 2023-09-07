@@ -5,7 +5,7 @@ import mailImg from '../../common/Images/mail.svg';
 
 export const Home = () => {
     return (
-        <Wrapper id = "home">
+        <Wrapper id="home">
             <ContentWrapper>
                 <Header>Hello</Header>
                 <Name>I'm</Name>
@@ -14,7 +14,7 @@ export const Home = () => {
 
                 <SocialsWrapper>
                     {socialLinksData.map((social, index) => (
-                        <SocialLink key={index}>
+                        <SocialLink href={social.href} target='_blank' key={index}>
                             <SocailThumbnail src={social.src} />
                         </SocialLink>
                     ))}
