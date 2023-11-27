@@ -19,10 +19,12 @@ interface Repo {
 }
 
 export const Porfolio = () => {
+
     const { data } = useQuery<Repo[]>(
         ["projects"],
         fetchRepos
     );
+    
     const [ref, inView] = useInView({
         triggerOnce: true,
         rootMargin: calculateRootMargin(),

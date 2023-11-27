@@ -8,7 +8,8 @@ export const Wrapper = styled.section<{ leftvariant?: boolean; rightvariant?: bo
     align-items: center;
     align-content: center;
     background: radial-gradient(89.04% 61.21% at 22.45% 16.58%, rgba(224, 188, 20, 0.08) 0%, rgba(255, 255, 255, 0.00) 100%);
-   
+    
+
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
         padding: 20px 16px;
         grid-auto-rows: min-content;

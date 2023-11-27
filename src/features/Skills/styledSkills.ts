@@ -6,7 +6,9 @@ export const ContentWrapper = styled.div`
     justify-content: space-around;
     align-items: start;
     gap: 40px;
-
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
     
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
         display: grid;

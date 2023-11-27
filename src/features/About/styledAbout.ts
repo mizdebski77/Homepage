@@ -6,7 +6,10 @@ export const ContentWrapper = styled.div`
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         display: flex;
         flex-direction: column;

@@ -6,6 +6,9 @@ export const ContentWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
         grid-template-columns: 1fr;

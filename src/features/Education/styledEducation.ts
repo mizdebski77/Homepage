@@ -6,6 +6,9 @@ export const ContentWrapper = styled.div`
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     animation: ${bottomAnimation} 1s;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         grid-template-columns: 1fr;
