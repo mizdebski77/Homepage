@@ -9,15 +9,17 @@ import VS from '../../common/Images/Programs/vs.png';
 
 
 export const Skillset = [
-    "HTML",
-    "CSS",
+    "HTML & CSS",
     "JavaScript",
     "TypeScript",
     "Immutability",
     "Git",
-    "React",
-    "TeamWork",
+    "React.js",
+    "React Native",
+    "Jira",
+    "AWS",
     "Redux",
+    "Team Work",
     "RWD",
     "API",
     "Markdown",
